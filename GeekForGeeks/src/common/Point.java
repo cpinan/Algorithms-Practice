@@ -14,6 +14,12 @@ public class Point {
         this.y = y;
     }
 
+    public float squareDistance(Point other) {
+        float X = x - other.x;
+        float Y = y - other.y;
+        return X * X + Y * Y;
+    }
+
     public static Point create(float x, float y) {
         return new Point(x, y);
     }
